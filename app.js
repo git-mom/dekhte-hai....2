@@ -5,7 +5,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 var socket = require("socket.io")
 var server = app.listen(3000 || process.env.PORT, () => { console.log("go shivam") })
-app.set("view engine", "ejs")
+app.set("view engine","ejs")
 app.set("views", require("path").join(__dirname, "views"));
 var io = socket(server);
 
